@@ -224,6 +224,7 @@
     <li><a href="#s6">赛前Checklist</a></li>
     <li><a href="#s7">线上路演操作全流程（腾讯会议）</a></li>
     <li><a href="#s8">电脑端实时提词与计时方案</a></li>
+    <li><a href="#tool-link">Offer蛙配置 & 答辩题库</a></li>
   </ol>
 </nav>
 
@@ -787,6 +788,399 @@
     </div>
   </div>
 </section>
+
+<!-- ==================== Section: 路演辅助工具（Offer蛙接入） ==================== -->
+<section class="section" id="tool-link">
+  <div class="section-header">
+    <div class="section-num online">9</div>
+    <h2>路演辅助工具</h2>
+  </div>
+
+  <div class="card">
+    <h3>Offer蛙 App：手机端实时答辩辅助</h3>
+    <p style="font-size:14px; color:var(--text-light); line-height:1.8; margin-top:8px;">
+      <strong>推荐方案：</strong>安装 Offer蛙（面试助手），将专属题库提前导入，答辩时 App 通过麦克风实时识别评委提问，3秒内弹出匹配答案。
+      支持双设备模式：手机显示答案，电脑正常屏幕共享不受干扰。
+    </p>
+    <div class="tip-box" style="margin-top:14px">
+      <h4>两步配置</h4>
+      <p style="font-size:14px;color:var(--text);"><strong>第1步：</strong>在Offer蛙"简历"处上传 <a href="OfferWa_QiHuang_SmartHand_Project_Profile.pdf" style="color:var(--primary);font-weight:600;">项目介绍PDF</a>，让AI理解你的项目全貌。<br>
+      <strong>第2步：</strong>在Offer蛙"专属题库"中逐条添加下方 <a href="#qa-tool" style="color:var(--primary);font-weight:600;">16道高频答辩题</a>（每题约30秒，一键复制粘贴）。</p>
+    </div>
+    <div style="display:flex; gap:12px; margin-top:16px; flex-wrap:wrap;">
+      <a href="#qa-tool" class="download-btn primary" style="font-size:14px; padding:12px 24px;">
+        <span>一键复制答辩题库</span>
+      </a>
+      <a href="OfferWa_QiHuang_SmartHand_Project_Profile.pdf" class="download-btn secondary" style="font-size:14px; padding:12px 24px;">
+        <span>下载项目介绍PDF</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Section: OfferWa Q&A 答辩题库 ==================== -->
+<section class="section" id="qa-tool">
+  <div class="section-header">
+    <div class="section-num online">10</div>
+    <h2>Offer蛙答辩题库 · 一键复制</h2>
+  </div>
+
+  <div class="tip-box blue" style="margin-bottom:20px">
+    <h4>使用说明</h4>
+    <p style="font-size:14px;color:var(--text);margin-top:4px">在Offer蛙App「专属题库」中逐条添加。点击「复制问题」→ 粘贴到"输入问题"框 → 点击「复制答案」→ 粘贴到"输入答案..."框 → 提交。共16题，每条约30秒。</p>
+  </div>
+
+  <div class="qa-list">
+
+    <!-- Q1 -->
+    <div class="qa-card">
+      <div class="qa-q-row">
+        <span class="qa-num">Q1</span>
+        <span class="qa-text">你们的核心技术壁垒是什么？</span>
+        <button class="qa-copy-btn q-copy" onclick="copyQA(this, 'q1')">复制问题</button>
+      </div>
+      <div class="qa-a-row">
+        <span class="qa-label">A</span>
+        <span class="qa-text">我们有三大壁垒：第一，自研柔性薄膜压力传感器阵列，64点矩阵采集，0.1N精度，市面上没有同类TCM专用传感器；第二，DTW动态时间规整算法引擎，将穴位按摩动作数字化匹配，经2000+临床样本验证准确率95%；第三，361个穴位×5种标准手法的专有数据库，这是3年以上中医临床专家标注的成果。三项发明专利已提交，构成完整的知识产权护城河。</span>
+        <button class="qa-copy-btn a-copy" onclick="copyQA(this, 'a1')">复制答案</button>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="qa-card">
+      <div class="qa-q-row">
+        <span class="qa-num">Q2</span>
+        <span class="qa-text">你们的竞品有哪些？核心竞争力是什么？</span>
+        <button class="qa-copy-btn q-copy" onclick="copyQA(this, 'q2')">复制问题</button>
+      </div>
+      <div class="qa-a-row">
+        <span class="qa-label">A</span>
+        <span class="qa-text">目前市场上没有直接竞品。间接竞品有三类：传统中医训练人偶——没有数字反馈，靠师傅肉眼判断；通用医学模拟系统如CAE Healthcare——主要面向西医急救，没有中医穴位体系；可穿戴IMU手套如Rokoko——只有姿态捕捉，没有压力感应。我们的核心竞争力是"传感器+算法+数据库"三位一体，专为中医穴位定量评估而设计，这是其他产品不具备的。</span>
+        <button class="qa-copy-btn a-copy" onclick="copyQA(this, 'a2')">复制答案</button>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="qa-card">
+      <div class="qa-q-row">
+        <span class="qa-num">Q3</span>
+        <span class="qa-text">商业模式是什么？怎么盈利？</span>
+        <button class="qa-copy-btn q-copy" onclick="copyQA(this, 'q3')">复制问题</button>
+      </div>
+      <div class="qa-a-row">
+        <span class="qa-label">A</span>
+        <span class="qa-text">我们有三级收入模型。第一级，硬件销售：智能传感手套+软件授权，定价3980元/套，面向中医高校和教学医院批量采购；第二级，SaaS订阅：云端数据分析+穴位数据库更新，1200元/学生/年；第三级，定制化数据库授权：为考培机构提供专项穴位考核数据库。收入结构预期：硬件60%、SaaS 25%、数据库授权15%。</span>
+        <button class="qa-copy-btn a-copy" onclick="copyQA(this, 'a3')">复制答案</button>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="qa-card">
+      <div class="qa-q-row">
+        <span class="qa-num">Q4</span>
+        <span class="qa-text">融资90万怎么花？估值怎么来的？</span>
+        <button class="qa-copy-btn q-copy" onclick="copyQA(this, 'q4')">复制问题</button>
+      </div>
+      <div class="qa-a-row">
+        <span class="qa-label">A</span>
+        <span class="qa-text">90万的使用分配：40%用于硬件研发优化，主要是传感器模具开模和柔性材料迭代；30%用于临床验证，在3家教学医院开展300例对照试验；20%用于软件开发，完成云端分析平台MVP；10%用于知识产权和医疗器械注册备案。融资前估值810万，对应出让10%股权。估值基于：已投入研发成本约120万、3项发明专利的IP价值、以及已有2家意向采购单位的市场验证。</span>
+        <button class="qa-copy-btn a-copy" onclick="copyQA(this, 'a4')">复制答案</button>
+      </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="qa-card">
+      <div class="qa-q-row">
+        <span class="qa-num">Q5</span>
+        <span class="qa-text">目标市场有多大？你们瞄准哪个细分？</span>
+        <button class="qa-copy-btn q-copy" onclick="copyQA(this, 'q5')">复制问题</button>
+      </div>
+      <div class="qa-a-row">
+        <span class="qa-label">A</span>
+        <span class="qa-text">中医教育市场总规模TAM约1200亿元，可服务市场SAM约180亿——涵盖30+所中医高等院校、2000+家中医教学医院、以及全国中医执业医师技能考核市场。我们头三年瞄准60家试点院校和医院，目标市场SOM约3.6亿。中长期扩展至中医药管理局技能认证体系、海外中医培训机构，市场空间非常可观。</span>
+        <button class="qa-copy-btn a-copy" onclick="copyQA(this, 'a5')">复制答案</button>
+      </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="qa-card">
+      <div class="qa-q-row">
+        <span class="qa-num">Q6</span>
+        <span class="qa-text">DTW算法具体怎么工作？为什么用它？</span>
+        <button class="qa-copy-btn q-copy" onclick="copyQA(this, 'q6')">复制问题</button>
+      </div>
+      <div class="qa-a-row">
+        <span class="qa-label">A</span>
+        <span class="qa-text">DTW（动态时间规整）是一种专门处理时间序列相似度匹配的算法。学生按摩穴位时，传感器以100Hz采样记录力度、角度、深度三个维度的时间序列数据，形成一个多维轨迹曲线。DTW将这条曲线与标准手法模板进行非线性对齐和距离计算，输出0-100分的匹配评分。选DTW而非传统深度学习的原因：第一，中医手法速度快慢因人而异，DTW天然支持时间轴伸缩；第二，训练数据有限，DTW不需要大量标注样本，基于模板即可工作；第三，可解释性强，能指出具体哪一步偏离了标准，方便教学反馈。</span>
+        <button class="qa-copy-btn a-copy" onclick="copyQA(this, 'a6')">复制答案</button>
+      </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="qa-card">
+      <div class="qa-q-row">
+        <span class="qa-num">Q7</span>
+        <span class="qa-text">团队怎么构成的？跨学科协作如何保障？</span>
+        <button class="qa-copy-btn q-copy" onclick="copyQA(this, 'q7')">复制问题</button>
+      </div>
+      <div class="qa-a-row">
+        <span class="qa-label">A</span>
+        <span class="qa-text">团队共7人，四学科交叉：中医临床2人——负责穴位数据库建设、手法标准化和临床验证设计；硬件工程1人——负责柔性传感器选型、电路设计和嵌入式开发；算法软件2人——负责DTW引擎、云端平台和数据可视化；商业运营2人——负责市场渠道、融资和医疗器械注册。跨学科协作有制度化保障：每周联合评审会、共享GitLab文档库、以及一位从业20年的副主任中医师担任临床顾问把关方向，确保工程实现不走偏中医本质。</span>
+        <button class="qa-copy-btn a-copy" onclick="copyQA(this, 'a7')">复制答案</button>
+      </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="qa-card">
+      <div class="qa-q-row">
+        <span class="qa-num">Q8</span>
+        <span class="qa-text">产品目前到了什么阶段？</span>
+        <button class="qa-copy-btn q-copy" onclick="copyQA(this, 'q8')">复制问题</button>
+      </div>
+      <div class="qa-a-row">
+        <span class="qa-label">A</span>
+        <span class="qa-text">目前是原型机V2.0阶段，已经完成：柔性传感器手套硬件迭代两版、IMU姿态模块集成、361穴位标准手法数据库建库、DTW评分引擎完成2000例测试（准确率95%）、3项发明专利已提交、1项软件著作权已登记。下一阶段重点是：与3家医院合作开展300例临床验证试验，同步开发云端分析平台MVP，并启动二类医疗器械注册准备。预计6个月内完成临床验证并进入小批量试产。</span>
+        <button class="qa-copy-btn a-copy" onclick="copyQA(this, 'a8')">复制答案</button>
+      </div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="qa-card">
+      <div class="qa-q-row">
+        <span class="qa-num">Q9</span>
+        <span class="qa-text">面对的最大风险是什么？如何应对？</span>
+        <button class="qa-copy-btn q-copy" onclick="copyQA(this, 'q9')">复制问题</button>
+      </div>
+      <div class="qa-a-row">
+        <span class="qa-label">A</span>
+        <span class="qa-text">我们识别了三大风险并都有应对方案。技术风险：柔性传感器长期耐用性——我们已与中科院深圳先进院材料所建立合作，测试目标寿命10万次按压，目前通过5万次。市场风险：中医教育数字化接受度——我们采用"试点先行"策略，已获得2家院校的口头采购意向，用标杆案例打消疑虑。监管风险：医疗器械认证周期长——我们先行以教学设备（非医疗器械）切入市场，同步启动二类医疗器械注册流程，双轨并行不会卡住商业化进度。</span>
+        <button class="qa-copy-btn a-copy" onclick="copyQA(this, 'a9')">复制答案</button>
+      </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="qa-card">
+      <div class="qa-q-row">
+        <span class="qa-num">Q10</span>
+        <span class="qa-text">未来三年规划是什么？</span>
+        <button class="qa-copy-btn q-copy" onclick="copyQA(this, 'q10')">复制问题</button>
+      </div>
+      <div class="qa-a-row">
+        <span class="qa-label">A</span>
+        <span class="qa-text">三年三阶段：第一年（验证期）——完成300例临床验证，拿到二类医疗器械备案，签约10家院校客户，营收240万；第二年（扩展期）——产品迭代V3.0，增加针灸手法评估模块，扩展至50家客户，SaaS收入占比提升至30%，营收850万；第三年（规模化）——进入中医执业资格考试市场，与中医药管理局合作技能认证标准，客户数突破150家，营收2200万。三年后启动Pre-A轮融资，估值目标5000万。</span>
+        <button class="qa-copy-btn a-copy" onclick="copyQA(this, 'a10')">复制答案</button>
+      </div>
+    </div>
+
+    <!-- Q11 -->
+    <div class="qa-card">
+      <div class="qa-q-row">
+        <span class="qa-num">Q11</span>
+        <span class="qa-text">传感器用的是哪种技术？有什么优势？</span>
+        <button class="qa-copy-btn q-copy" onclick="copyQA(this, 'q11')">复制问题</button>
+      </div>
+      <div class="qa-a-row">
+        <span class="qa-label">A</span>
+        <span class="qa-text">我们使用的是柔性薄膜压阻式传感器阵列，64个采集点分布在手套指尖和掌面，量程0-50N，分辨率0.1N。相比市面上主流的电容式传感器，压阻式优势在于：第一，线性度好，力-电转换关系稳定，不需要复杂校准；第二，抗干扰强，不受汗液和皮肤湿度影响，这是中医按摩场景的刚需；第三，成本可控，单只手套传感器模组成本约180元，量产可降至80元以内，支撑3980元定价的健康毛利。</span>
+        <button class="qa-copy-btn a-copy" onclick="copyQA(this, 'a11')">复制答案</button>
+      </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="qa-card">
+      <div class="qa-q-row">
+        <span class="qa-num">Q12</span>
+        <span class="qa-text">知识产权保护做了什么？</span>
+        <button class="qa-copy-btn q-copy" onclick="copyQA(this, 'q12')">复制问题</button>
+      </div>
+      <div class="qa-a-row">
+        <span class="qa-label">A</span>
+        <span class="qa-text">已构建三层IP保护：第一层，3项发明专利——柔性穴位压力传感装置及方法、基于DTW的穴位按摩评分系统、多模态中医穴位训练反馈系统，覆盖硬件、算法和系统三个维度；第二层，1项软件著作权——岐黄智手评估平台V1.0；第三层，商标保护——"岐黄智手"在第9类（科学仪器）、第10类（医疗器械）、第42类（软件服务）三个类别均已注册。此外，穴位数据库作为核心商业机密，采用分级权限管理和加密存储，不申请公开专利。</span>
+        <button class="qa-copy-btn a-copy" onclick="copyQA(this, 'a12')">复制答案</button>
+      </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="qa-card">
+      <div class="qa-q-row">
+        <span class="qa-num">Q13</span>
+        <span class="qa-text">教育不是暴利行业，IRR 52%是不是太乐观了？</span>
+        <button class="qa-copy-btn q-copy" onclick="copyQA(this, 'q13')">复制问题</button>
+      </div>
+      <div class="qa-a-row">
+        <span class="qa-label">A</span>
+        <span class="qa-text">IRR 52%基于保守测算。关键假设：硬件毛利率65%（物料成本约1400元/套），SaaS边际成本趋近于零（每增加一名学生仅服务器成本约30元/年），客户生命周期5年以上（教学设备更新周期长）。单位经济模型：单客户首年贡献3980元硬件+平均50名学生×1200元SaaS=6.4万元，获客成本约1.2万元（通过学术会议和试点示范），回收期不到3个月。这些数字参考了同类教育科技硬件如科大讯飞语音实验室产品的公开财务数据，并非拍脑袋估算。</span>
+        <button class="qa-copy-btn a-copy" onclick="copyQA(this, 'a13')">复制答案</button>
+      </div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="qa-card">
+      <div class="qa-q-row">
+        <span class="qa-num">Q14</span>
+        <span class="qa-text">医疗器械注册需要多久？会不会影响上市节奏？</span>
+        <button class="qa-copy-btn q-copy" onclick="copyQA(this, 'q14')">复制问题</button>
+      </div>
+      <div class="qa-a-row">
+        <span class="qa-label">A</span>
+        <span class="qa-text">我们采用"双轨并行"策略，不会等待注册完成再上市。Track 1——教学设备路线（无需医疗器械注册）：将第一代产品定位为"中医推拿教学训练系统"，属于教学辅助设备，可直接面向高校销售，这条路0门槛、0等待。Track 2——医疗器械路线（二类注册约12-18个月）：同步启动检验检测和临床试验，目标是在产品上市第二年拿到注册证，届时升级为"中医推拿技能评估系统"，进入执业资格考试和医院质控市场。两条轨道互不阻塞，商业化不会因注册周期而延迟。</span>
+        <button class="qa-copy-btn a-copy" onclick="copyQA(this, 'a14')">复制答案</button>
+      </div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="qa-card">
+      <div class="qa-q-row">
+        <span class="qa-num">Q15</span>
+        <span class="qa-text">为什么学校要买你们的产品？有什么政策支持？</span>
+        <button class="qa-copy-btn q-copy" onclick="copyQA(this, 'q15')">复制问题</button>
+      </div>
+      <div class="qa-a-row">
+        <span class="qa-label">A</span>
+        <span class="qa-text">三重驱动力让学校有购买意愿。政策面，《"十四五"中医药发展规划》明确要求"推进中医药教育数字化转型"和"建立中医临床技能客观化考核体系"，2025年教育部将中医执业医师实践技能考试逐步推行机考+客观评分，传统主观打分模式正在被淘汰。需求面：中医高校普遍面临"学生多、师傅少"的困境，一名教授最多带20名学生，我们产品让1名教师同时监控40名学生并给出量化反馈，效率翻倍。经济面：教育信息化专项经费充足，广东省2025年高职教育生均拨款已提至1.2万元，采购一套不到4000元的设备在预算内轻松覆盖。</span>
+        <button class="qa-copy-btn a-copy" onclick="copyQA(this, 'a15')">复制答案</button>
+      </div>
+    </div>
+
+    <!-- Q16 -->
+    <div class="qa-card">
+      <div class="qa-q-row">
+        <span class="qa-num">Q16</span>
+        <span class="qa-text">你们是学生创业团队，凭什么让投资人相信你们能做成？</span>
+        <button class="qa-copy-btn q-copy" onclick="copyQA(this, 'q16')">复制问题</button>
+      </div>
+      <div class="qa-a-row">
+        <span class="qa-label">A</span>
+        <span class="qa-text">三点打消顾虑。第一，不是从零开始——原型机已迭代两版，2000例临床测试数据真实可查，3项专利已提交，这些是看得见的进度，不是PPT上的概念。第二，有成熟的外部支撑——肇庆医学院提供实验室和临床资源，副主任中医师级别的临床顾问全程把关专业方向，中科院深圳先进院材料所在传感器材料方面提供技术支持，我们不是几个学生闷头瞎干。第三，创业组赛道的本质就是投人+投方向——我们方向对（中医数字化是国家战略级赛道），执行快（6个月从概念到V2.0原型），团队拼（四学科交叉、每周60+小时投入），这是早期投资最看重的三个品质。</span>
+        <button class="qa-copy-btn a-copy" onclick="copyQA(this, 'a16')">复制答案</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .qa-list { display:flex; flex-direction:column; gap:16px; }
+
+  .qa-card {
+    background: var(--card); border-radius: 12px; border: 1px solid var(--border);
+    overflow: hidden; transition: border-color 0.2s;
+  }
+  .qa-card:hover { border-color: var(--primary); }
+
+  .qa-q-row, .qa-a-row {
+    display: flex; align-items: flex-start; gap: 10px; padding: 14px 16px;
+    position: relative;
+  }
+  .qa-q-row { background: linear-gradient(135deg, #FFF8F5, #FFF3EE); border-bottom: 1px solid #F0E0D8; }
+  .qa-a-row { background: #FAFBFC; }
+
+  .qa-num, .qa-label {
+    flex-shrink: 0; width: 32px; height: 26px; border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 13px; margin-top: 1px;
+  }
+  .qa-num { background: var(--primary); color: white; }
+  .qa-label { background: #4A6CF7; color: white; }
+
+  .qa-text { flex:1; font-size: 14px; line-height: 1.7; color: var(--text); padding-top: 2px; }
+
+  .qa-copy-btn {
+    flex-shrink: 0; padding: 5px 14px; border-radius: 6px; border: 1.5px solid #D0D0D0;
+    background: white; color: var(--text-light); font-size: 12px; font-weight: 600;
+    cursor: pointer; transition: all 0.15s; white-space: nowrap; margin-top: 1px;
+  }
+  .qa-copy-btn:hover { background: var(--primary); color: white; border-color: var(--primary); }
+  .qa-copy-btn.copied { background: #2DA44E; color: white; border-color: #2DA44E; }
+
+  .q-copy { min-width: 70px; }
+  .a-copy { min-width: 70px; }
+
+  @media (max-width: 640px) {
+    .qa-q-row, .qa-a-row { flex-wrap: wrap; }
+    .qa-copy-btn { margin-left: 42px; }
+  }
+</style>
+
+<script>
+  const QA_DATA = {
+    q1: document.querySelector('#qa-tool .qa-card:nth-child(1) .qa-q-row .qa-text').textContent,
+    a1: document.querySelector('#qa-tool .qa-card:nth-child(1) .qa-a-row .qa-text').textContent,
+    q2: document.querySelector('#qa-tool .qa-card:nth-child(2) .qa-q-row .qa-text').textContent,
+    a2: document.querySelector('#qa-tool .qa-card:nth-child(2) .qa-a-row .qa-text').textContent,
+    q3: document.querySelector('#qa-tool .qa-card:nth-child(3) .qa-q-row .qa-text').textContent,
+    a3: document.querySelector('#qa-tool .qa-card:nth-child(3) .qa-a-row .qa-text').textContent,
+    q4: document.querySelector('#qa-tool .qa-card:nth-child(4) .qa-q-row .qa-text').textContent,
+    a4: document.querySelector('#qa-tool .qa-card:nth-child(4) .qa-a-row .qa-text').textContent,
+    q5: document.querySelector('#qa-tool .qa-card:nth-child(5) .qa-q-row .qa-text').textContent,
+    a5: document.querySelector('#qa-tool .qa-card:nth-child(5) .qa-a-row .qa-text').textContent,
+    q6: document.querySelector('#qa-tool .qa-card:nth-child(6) .qa-q-row .qa-text').textContent,
+    a6: document.querySelector('#qa-tool .qa-card:nth-child(6) .qa-a-row .qa-text').textContent,
+    q7: document.querySelector('#qa-tool .qa-card:nth-child(7) .qa-q-row .qa-text').textContent,
+    a7: document.querySelector('#qa-tool .qa-card:nth-child(7) .qa-a-row .qa-text').textContent,
+    q8: document.querySelector('#qa-tool .qa-card:nth-child(8) .qa-q-row .qa-text').textContent,
+    a8: document.querySelector('#qa-tool .qa-card:nth-child(8) .qa-a-row .qa-text').textContent,
+    q9: document.querySelector('#qa-tool .qa-card:nth-child(9) .qa-q-row .qa-text').textContent,
+    a9: document.querySelector('#qa-tool .qa-card:nth-child(9) .qa-a-row .qa-text').textContent,
+    q10: document.querySelector('#qa-tool .qa-card:nth-child(10) .qa-q-row .qa-text').textContent,
+    a10: document.querySelector('#qa-tool .qa-card:nth-child(10) .qa-a-row .qa-text').textContent,
+    q11: document.querySelector('#qa-tool .qa-card:nth-child(11) .qa-q-row .qa-text').textContent,
+    a11: document.querySelector('#qa-tool .qa-card:nth-child(11) .qa-a-row .qa-text').textContent,
+    q12: document.querySelector('#qa-tool .qa-card:nth-child(12) .qa-q-row .qa-text').textContent,
+    a12: document.querySelector('#qa-tool .qa-card:nth-child(12) .qa-a-row .qa-text').textContent,
+    q13: document.querySelector('#qa-tool .qa-card:nth-child(13) .qa-q-row .qa-text').textContent,
+    a13: document.querySelector('#qa-tool .qa-card:nth-child(13) .qa-a-row .qa-text').textContent,
+    q14: document.querySelector('#qa-tool .qa-card:nth-child(14) .qa-q-row .qa-text').textContent,
+    a14: document.querySelector('#qa-tool .qa-card:nth-child(14) .qa-a-row .qa-text').textContent,
+    q15: document.querySelector('#qa-tool .qa-card:nth-child(15) .qa-q-row .qa-text').textContent,
+    a15: document.querySelector('#qa-tool .qa-card:nth-child(15) .qa-a-row .qa-text').textContent,
+    q16: document.querySelector('#qa-tool .qa-card:nth-child(16) .qa-q-row .qa-text').textContent,
+    a16: document.querySelector('#qa-tool .qa-card:nth-child(16) .qa-a-row .qa-text').textContent
+  };
+
+  function copyQA(btn, key) {
+    const text = QA_DATA[key];
+    if (!text) return;
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function() {
+        showCopied(btn);
+      }).catch(function() {
+        fallbackCopy(text, btn);
+      });
+    } else {
+      fallbackCopy(text, btn);
+    }
+  }
+
+  function fallbackCopy(text, btn) {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.style.position = 'fixed';
+    textarea.style.left = '-9999px';
+    textarea.style.top = '-9999px';
+    document.body.appendChild(textarea);
+    textarea.focus();
+    textarea.select();
+    try {
+      document.execCommand('copy');
+      showCopied(btn);
+    } catch(e) {
+      alert('复制失败，请手动选择文本复制');
+    }
+    document.body.removeChild(textarea);
+  }
+
+  function showCopied(btn) {
+    const orig = btn.textContent;
+    btn.textContent = '已复制！';
+    btn.classList.add('copied');
+    setTimeout(function() {
+      btn.textContent = orig;
+      btn.classList.remove('copied');
+    }, 1500);
+  }
+</script>
 
 </div>
 
